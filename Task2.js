@@ -1,0 +1,6 @@
+var x = 1 + 1 + 2;
+var y = (1 + 1) * 2;
+var z = 1 + (1 * 2);
+var a = 1 + 1 * 2 / 2;
+var b = (1 + 1 * 2 ) / 2;
+console.log("vlaues of x,y,z,a,b are " + "x- " + x + ",y- "+  y + ", z- " + z + ", a- " + a + ", b- " + b + ".");
