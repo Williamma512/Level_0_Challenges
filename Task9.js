@@ -1,16 +1,14 @@
-var inputname1 = 'U';
-var inputernam2 = 'm';
-var inputername3 = 'u';
-var inputername4 = 'z';
-var inputername5 = 'i';
 
-switch (inputname1, inputernam2, inputername3, inputername4, inputername5) {
-    case 'a' :
-    case 'e' :
-    case 'i' :
-    case 'o' :
-    case 'u' :
-    console.log("Vowels :" + inputname1 + ", " + inputername3  + ", " +  inputername5 );
-    break
+function findingvowels(userInput) {
+  var userInput = "Successful programmers know that it is really important to pay attention to detail"
+  for (i = 0; i < userInput.length; i++)
+  {
+    if(userInput.charAt(i) == 'a' || userInput.charAt(i) == 'e' || userInput.charAt(i) == 'i' || userInput.charAt(i) == 'o'
+    || userInput.charAt(i) == 'u')
+    {
+     console.log("Vowels-" + userInput.charAt(i));
+    }
+  }
 
 }
+findingvowels();
