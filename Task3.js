@@ -1,10 +1,4 @@
-var num = 2;
-
-function eveonOrOdd() {
-if (num % 2 == 0)
-    console.log("Even") 
-
-else 
-console.log("Odd");
+function Hello(argument1, argument2) {
+    console.log(argument1, argument2)
 }
-eveonOrOdd();
+Hello("Hello", "Thsepo");
