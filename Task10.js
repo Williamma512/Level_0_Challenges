@@ -1,18 +1,15 @@
-
-const firstString = "House";
-const secondString = "Computers";
-const findingCommonString = (firstString = '', secondString = '') => {
-    const commonstring = Object.create(null);
-    let u, w, part;
-    for (u = 0; u < firstString.length -1; u++) {
-        for (w = u + 1; w <= firstString.length; w++) {
-            part = firstString.slice(u, w);
-            if (secondString.indexOf(part) !== -1) {
-                commonstring[part] = true;
-        }
-        }
+function commonChar (firstString, secondString) {
+    let common=[];
+    let count = 0;
+    const obj = secondString.split("");
+    for (const str of secondString) {
+        if(idx >= 0) {
+    common.push(obj.find(s => s === str));
+    count ++;
+    obj.splice(idx, 1);_
+}
     }
-    const commonEl = Object.keys(commonstring);
-    return commonEl;
-};
-console.log("Common Letters are: " + findingCommonString(firstString, secondString));
+    return common;
+}
+
+console.log(getSameCount("House", "Computers")

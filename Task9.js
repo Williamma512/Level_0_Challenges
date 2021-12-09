@@ -1,19 +1,20 @@
-function findingvowels(userInput,userInputsecond) {
-  var userInput = "Umuzi"
-  var userInputsecond = "William"
-  for (i = 0; i < userInput.length; i++)
-  {
-    if(userInput.charAt(i) == 'a' || userInput.charAt(i) == 'e' || userInput.charAt(i) == 'i' || userInput.charAt(i) == 'o'
-    || userInput.charAt(i) == 'u')
-    {
-     console.log("Umuzi Vowels-" + userInput.charAt(i));
-    }
+var newarray = [];
+function findingvowels(userInput) {
+	var userInput ;
+	
+	let newArray = [];
+	for (i = 0; i < userInput.length; i++)
+	{
+	  if(userInput.charAt(i) == 'a' 
+	  || userInput.charAt(i) == 'e' 
+	  || userInput.charAt(i) == 'i' 
+	  || userInput.charAt(i) == 'o'
+	  || userInput.charAt(i) == 'u')
+	  {
+		let first = newArray.push(userInput.charAt(i));
+	  }
+	}
+	console.log("Vowels " + newArray );
   }
-  for (i = 0; i < userInputsecond.length; i++)
-  if(userInput.charAt(i) == 'a' || userInput.charAt(i) == 'e' || userInput.charAt(i) == 'i' || userInput.charAt(i) == 'o'
-    || userInput.charAt(i) == 'u')
-    {
-     console.log("William Vowels-" + userInputsecond.charAt(i));
-    }
-}
-findingvowels();
+
+  findingvowels("Umuzi");
